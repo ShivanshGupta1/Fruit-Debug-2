@@ -45,9 +45,9 @@ class Game {
       x = 500 - allPlayers[plr].distance;
       y = 500;
 
-      players[0].x = x;
+      players[index - 1].x = x;
       console.log(player1.x);
-      players[0].y = y;
+      players[index - 1].y = y;
 
       if (index === player.index) {
         fill("black");

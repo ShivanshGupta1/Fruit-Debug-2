@@ -45,6 +45,7 @@ class Form{
         });
 
         this.reset.mousePressed(() => {
+            database.ref("/").update({ players: null });
             player.updateCount(0);
             game.update(0);
             location.reload()
