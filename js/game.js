@@ -50,13 +50,19 @@ class Game {
       players[index - 1].y = y;
 
       if (index === player.index) {
-        fill("black");
+        fill("blue");
         textSize(25);
         text(allPlayers[plr].name, x - 25, y + 25);
       }
 
       //text to display player score.
-      text(allPlayers[plr].name + ": " + allPlayers[plr].score, 50, 50);
+              fill("blue");
+              textSize(25);
+      text(
+        allPlayers[plr].name + ": " + allPlayers[plr].score,
+        50,
+        150 + index * 50
+      );
     }
 
     if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
